@@ -1,0 +1,128 @@
+/* Main container stretches full width with a gradient background */
+.contact-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(79, 54, 79, 0.9));
+    color: white;
+  }
+  
+  /* Centered hero text at the top */
+  .contact-hero {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+  }
+  
+  .contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-hero p {
+    font-size: 1.2rem;
+    color: #d1b3ff;
+  }
+  
+  /* Two-column layout container */
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    width: 100%;
+    gap: 40px;
+    padding: 0 20px; /* Optional horizontal padding */
+  }
+  
+  /* Left column (description & details) */
+  .contact-left {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-left h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .contact-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Contact details styling */
+  .contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-details p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+  
+  /* Right column (form) */
+  .contact-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #d1b3ff;
+  }
+  
+  .contact-form button {
+    background: linear-gradient(to right, purple, #b76eff);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #b76eff, #ffb3ff);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .contact-left,
+    .contact-right {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+  

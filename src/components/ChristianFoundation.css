@@ -1,0 +1,305 @@
+/* ChristianFoundation.css */
+
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Navbar Styles (common) */
+  .navbar {
+    background: transparent;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+  }
+  .navbar.scrolled {
+    background: #5a0e78;
+  }
+  .navLink {
+    color: white !important;
+    font-weight: bold;
+    margin: 0 20px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+  }
+  .navLink:hover {
+    color: #d1b3ff !important;
+    transform: scale(1.1);
+  }
+  .donateBtnText {
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  .donateBtnText:hover {
+    background-color: #d1b3ff;
+    color: #5a0e78;
+  }
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+  /* Custom Christian Home Container */
+
+/* Hero Section with Background Image & Watermark */
+
+
+/* Custom Christian Home Container */
+.custom-christian-home {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Hero Section (no watermark here) */
+.custom-hero-section {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust as needed */
+  background: url('./images/christian-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.custom-hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.custom-hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-hero-subtitle {
+  font-size: 1.3rem;
+}
+
+/* Main Content Section with Description Watermark */
+.custom-main-content {
+  position: relative;
+  padding: 40px 20px;
+}
+
+.custom-desc-watermark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./images/cross-watermark.jpg') no-repeat center center;
+  background-size: 40%;
+  opacity: 0.07;       /* Subtle watermark effect */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure description content appears above the watermark */
+.custom-content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Content Blocks, Text, and Image Blocks */
+.custom-content-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.custom-text-block {
+  flex: 1;
+  padding: 20px;
+}
+
+.custom-heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #5a0e78;
+  text-transform: uppercase;
+}
+
+.custom-text-block p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.custom-image-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.custom-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Reverse Block for Visual Variety */
+.custom-reverse-block {
+  flex-direction: row-reverse;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .custom-hero-section {
+    height: 300px;
+  }
+  .custom-hero-title {
+    font-size: 2rem;
+  }
+  .custom-hero-subtitle {
+    font-size: 1rem;
+  }
+  .custom-heading {
+    font-size: 1.4rem;
+  }
+  .custom-content-block {
+    flex-direction: column;
+  }
+}
+
+
+/* Main Content Section */
+.custom-main-content {
+  padding: 40px 20px;
+}
+
+/* Content Block (Reusable) */
+.custom-content-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.custom-text-block {
+  flex: 1;
+  padding: 20px;
+}
+
+.custom-heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #5a0e78;
+  text-transform: uppercase;
+}
+
+.custom-text-block p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.custom-image-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.custom-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Reverse Block (Text & Image Swap) */
+.custom-reverse-block {
+  flex-direction: row-reverse;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .custom-hero-section {
+    height: 300px;
+  }
+  .custom-hero-title {
+    font-size: 2rem;
+  }
+  .custom-hero-subtitle {
+    font-size: 1rem;
+  }
+  .custom-heading {
+    font-size: 1.4rem;
+  }
+  .custom-content-block {
+    flex-direction: column;
+  }
+}
+
+  /* Christian Foundation Specific Styles */
+  .heroSection2 {
+    position: relative;
+    width: 100vw;
+    background: url('./images/poor.webp') no-repeat center 20%/cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  /* Watermark Cross Styling */
+  .watermark-cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15rem;  /* Adjust size as needed */
+    color: rgba(255, 255, 255, 0.1);  /* Light, subtle watermark */
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  /* Ensure text appears above the watermark */
+  .title2, .subtitle2 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  /* Layout for Christian Foundation (Layout Wrapper with suffix "4") */
+  .layoutWrapper4 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .mainContent4 {
+    flex: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroSection2 {
+      height: 300px;
+    }
+    .title2 {
+      font-size: 2rem;
+    }
+    .subtitle2 {
+      font-size: 1.2rem;
+    }
+  }
+  

@@ -1,0 +1,150 @@
+/* Extended Christian About Page Container */
+.christian-about-extended {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  /* Hero Section */
+  .about-hero-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    background: url('./images/church5.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .about-hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Adjust opacity as needed */
+    z-index: 1;
+  }
+  
+  
+  .about-hero-overlay {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    padding: 0 20px;
+  }
+  
+  .about-hero-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-hero-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  /* Main Content with Watermark */
+  .about-main-content {
+    position: relative;
+    padding: 40px 20px;
+  }
+  
+  .about-desc-watermark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./images/cross-watermark.jpg') no-repeat center center;
+    background-size: 40%; /* Adjust size as needed */
+    opacity: 0.07;       /* Subtle watermark effect */
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .about-content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+  }
+  
+  /* Section Headings & Text */
+  .section-heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #5a0e78;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .subheading {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #5a0e78;
+    text-transform: uppercase;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .vision-mission-block {
+    margin-bottom: 20px;
+  }
+  
+  /* Our People Section */
+  .our-people-section {
+    margin-bottom: 40px;
+  }
+  
+  .leaders-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .leaders-list li {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Chairman's Message */
+  .chairman-message-section {
+    margin-bottom: 40px;
+  }
+  
+  .chairman-signature {
+    font-size: 1rem;
+    text-align: right;
+    color: #5a0e78;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-hero-section {
+      height: 300px;
+    }
+    .about-hero-title {
+      font-size: 2rem;
+    }
+    .about-hero-subtitle {
+      font-size: 1rem;
+    }
+    .section-heading {
+      font-size: 1.4rem;
+    }
+    .subheading {
+      font-size: 1.1rem;
+    }
+  }
+  

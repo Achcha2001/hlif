@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home'; // Landing page with two big buttons
+import GeneralHome from './components/GeneralHome';// General Foundation page with menu bar A
+import ChristianHome from './components/christianHome';// Christian Foundation page with menu bar B
+import ContactUs from './components/ContactUs';
+import About from './components/About';
+import Projects from './components/Projects';
+import Donation from './components/donation';
+import ForHealing from './components/ForHealing';
+import ChristianAbout from './components/ChristianAbout';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+      <Route path="/" element={<Home />} />
+        <Route path="/general" element={<GeneralHome />} />
+        <Route path="/christian" element={<ChristianHome />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/donate" element={<Donation/>} />
+        <Route path="christian/forhealing" element={<ForHealing/>} />
+        <Route path="christian/About" element={<ChristianAbout/>} />
+      </Routes>
+    </Router>
   );
 }
 

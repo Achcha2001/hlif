@@ -1,0 +1,160 @@
+/* GeneralFoundation.css */
+
+/* Prevent horizontal scrolling */
+
+  
+  /* Navbar Styles (common) */
+/* Navbar Styles (common) */
+.navbar {
+  background: linear-gradient(45deg, #5a0e78, #b76eff) !important; /* Purple gradient */
+  padding: 15px;
+  position: fixed;
+  
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+  /* Keep the same gradient if you want no visual change on scroll */
+  background: linear-gradient(45deg, #5a0e78, #b76eff) !important;
+}
+
+/* Navigation Link Styles */
+.navLink {
+  color: white !important;
+  font-weight: bold;
+  margin: 0 20px;
+ 
+  transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+.navLink:hover {
+  color: #e5ed04 !important;
+  transform: scale(1.1);
+}
+
+
+.donateBtnText {
+  background: linear-gradient(45deg, #100902, #3f0260) !important; /* Orange gradient for contrast */
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 40px; /* Increased horizontal padding for a longer button */
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.donateBtnText:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(45deg, #ffa500, #ff8c00); /* Reverse gradient on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+.logo {
+  width: 120px;
+  height: 120px;
+}
+
+  
+  /* General Foundation Specific Styles */
+  .heroSection1 {
+    width: 100vw;
+    background: url('./images/poor.webp') no-repeat center 20%/cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+  }
+  .heroSection1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .title1 {
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+  .subtitle1 {
+    font-size: 1.5rem;
+    color: #d1b3ff;
+    z-index: 1;
+  }
+  .missionSection1 {
+    width: 100vw;
+    background-color: #f0f0f0;
+    padding: 40px 0;
+  }
+  .twoColumnContainer1 {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .leftSection1 {
+    padding: 0;
+    height: 400px;
+    overflow: hidden;
+  }
+  .rightSection1 {
+    padding: 20px;
+  }
+  .contentSection1 {
+    padding: 50px 10%;
+    text-align: center;
+    color: #5a0e78;
+  }
+  .contentSection1 .sectionTitle {
+    font-size: 2rem;
+    color: #7a3e9d;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .contentSection1 .sectionText {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Layout for General Foundation (Layout Wrapper with suffix "3") */
+  .layoutWrapper3 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .mainContent3 {
+    flex: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroSection1 {
+      height: 300px;
+    }
+    .title1 {
+      font-size: 2rem;
+    }
+    .subtitle1 {
+      font-size: 1.2rem;
+    }
+    .contentSection1 .sectionTitle {
+      font-size: 1.8rem;
+    }
+    .contentSection1 .sectionText {
+      font-size: 1rem;
+    }
+  }
+  
