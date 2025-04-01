@@ -1,4 +1,3 @@
-// src/components/GeneralHome.jsx
 import React from 'react';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import GeneralLayout from './GeneralLayout';
@@ -9,8 +8,8 @@ function GeneralHome() {
   return (
     <GeneralLayout>
       {/* Hero Section */}
-      <Container className='heroSection1' fluid >
-        <div >
+      <Container className="heroSection1" fluid>
+        <div>
           <h1 className="title1">Welcome to the Help Island Lanka Foundation</h1>
           <p className="subtitle1">
             Providing hope, support, and opportunities to those in need.
@@ -100,10 +99,35 @@ function GeneralHome() {
 
       {/* Additional Content Section */}
       <Container className="contentSection1">
-        {/* Additional centered content can go here */}
+        <h2 className="sectionTitle">Our Impact</h2>
+        <p className="sectionText">
+          Since our inception, we have touched the lives of thousands. Our projects have provided critical medical care, educational support, and community development in rural areas, transforming countless lives.
+        </p>
+        <Row className="impact-stats">
+          <Col xs={6} md={3} className="stat-item">
+            <h3>500+</h3>
+            <p>Students Supported</p>
+          </Col>
+          <Col xs={6} md={3} className="stat-item">
+            <h3>100+</h3>
+            <p>Health Camps</p>
+          </Col>
+          <Col xs={6} md={3} className="stat-item">
+            <h3>50+</h3>
+            <p>Community Projects</p>
+          </Col>
+          <Col xs={6} md={3} className="stat-item">
+            <h3>200+</h3>
+            <p>Volunteers</p>
+          </Col>
+        </Row>
+
+        <h2 className="sectionTitle">Success Stories</h2>
+        <p className="sectionText">
+          Read about the transformative journeys of individuals who have overcome challenges with our support. Their stories inspire us every day to keep making a difference.
+        </p>
       </Container>
 
-      {/* Footer */}
       <Footer />
     </GeneralLayout>
   );

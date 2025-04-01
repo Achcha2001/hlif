@@ -88,6 +88,82 @@
     margin-bottom: 10px;
   }
 }
+/* Base Styles (as provided previously) remain unchanged */
+
+/* --- Responsive Mobile Styles --- */
+@media (max-width: 768px) {
+  /* Ensure the container fills full height on mobile */
+  .heroSection1 {
+    padding: 10px;
+  }
+  .title1 {
+    font-size: 2rem;
+  }
+  .subtitle1 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Stack the mission section vertically on mobile */
+  .twoColumnContainer1 {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .leftSection1, .rightSection1 {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Reduce carousel height if needed */
+  .leftSection1 .carousel,
+  .leftSection1 .carousel-item,
+  .leftSection1 .carousel img {
+    height: 50vh;
+  }
+  
+  /* For additional content section */
+  .contentSection1 {
+    padding: 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .sectionText {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  
+  .impact-stats .stat-item h3 {
+    font-size: 1.5rem;
+  }
+  .impact-stats .stat-item p {
+    font-size: 0.9rem;
+  }
+  
+  /* Button Container adjustments for mobile */
+  .fancy-button-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .fancy-selection-button {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    font-size: 1.4rem;
+  }
+  
+  /* Scale down logo size */
+  .fancy-logo {
+    width: 120px;
+    height: 130px;
+  }
+}
 
   
   /* General Foundation Specific Styles */
