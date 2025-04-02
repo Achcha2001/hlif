@@ -30,6 +30,7 @@ function Home() {
           width: 100vw;
           height: 100vh;
           z-index: -1;
+         
         }
         /* Each Carousel Slide must fill the viewport */
         .fancy-carousel .carousel-item {
@@ -39,6 +40,7 @@ function Home() {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          opacity:0.6;
         }
         /* Dark gradient overlay over the carousel */
         .fancy-carousel::after {
@@ -158,10 +160,10 @@ function Home() {
         {/* Background Slideshow */}
         <Carousel className="fancy-carousel" indicators={false} fade={true} interval={3000}>
           <Carousel.Item>
-            <img src="/images/charity1.jpg" alt="Highlight 1" className="d-block w-100" />
+            <img src="/images/chil4.webp" alt="Highlight 1" className="d-block w-100" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="/images/charity2.jpg" alt="Highlight 2" className="d-block w-100" />
+            <img src="/images/chil3.jpg" alt="Highlight 2" className="d-block w-100" />
           </Carousel.Item>
         </Carousel>
 
