@@ -7,7 +7,7 @@
 /* Navbar Styles (common) */
 .navbar {
   background: linear-gradient(45deg, #5a0e78, #b76eff) !important; /* Purple gradient */
-  padding: 15px;
+  /* padding: 10px; */
   position: fixed;
   
   top: 0;

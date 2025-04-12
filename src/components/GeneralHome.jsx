@@ -72,21 +72,7 @@ function GeneralHome() {
                 We envision a society where every individual has the opportunity to lead a fulfilling and prosperous life, breaking the cycle of poverty through empowerment and community support.
               </p>
 
-              <h2>What We Do</h2>
-              <ul>
-                <li>
-                  <strong>Healthcare Initiatives:</strong> Organizing medical camps and providing essential health services.
-                </li>
-                <li>
-                  <strong>Educational Programs:</strong> Offering scholarships, vocational training, and school support.
-                </li>
-                <li>
-                  <strong>Community Development:</strong> Building infrastructure and enhancing local opportunities.
-                </li>
-                <li>
-                  <strong>Disaster Relief:</strong> Providing immediate assistance during emergencies and helping communities rebuild.
-                </li>
-              </ul>
+              
 
               <h2>Get Involved</h2>
               <p>

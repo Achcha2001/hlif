@@ -1,82 +1,119 @@
-/* Ensure the entire page spans the full browser width */
+/* About Page Container */
 .about-page {
-    width: 100vw;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+    width: 100%;
     background: #fff;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scroll if needed */
   }
   
-  /* Hero section: full-width image at the top */
-  .about-heroo {
+  /* Hero Section */
+  .about-hero-section {
     position: relative;
-    width: 100vw;  /* Full viewport width */
-    height: 500px; /* Adjust as needed for your design */
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background: url('./images/about.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     overflow: hidden;
-    margin: 0 auto;
   }
   
-  /* Make the image cover the entire hero area */
-  .about-heroo img {
+  .about-hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
   }
   
-  /* Overlay for text on the hero image */
-  .hero-overlayy {
+  .hero-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    padding: 0 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay to improve text legibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
   
-  .hero-overlayy h1 {
+  .hero-overlay h1 {
     font-size: 2.8rem;
-    margin: 0;
+    color: #fff;
   }
   
-  /* Main content area below the hero */
-  .about-content {
-    max-width: 1200px; /* Keeps text centered and readable */
-    margin: 40px auto;
-    padding: 0 20px;
-    font-family: Arial, sans-serif;
+  /* Main Content Section with Watermark */
+  .about-main-content {
+    position: relative;
+    padding: 40px 20px;
   }
   
-  .about-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
+ 
+  
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .about-content h3 {
-    font-size: 1.6rem;
-    margin-top: 30px;
+  /* Section Styles */
+  .content-wrapper section {
+    margin-bottom: 40px;
+  }
+  
+  .content-wrapper h2 {
+    font-size: 1.8rem;
     color: #5a0e78;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
-  .about-content p {
+  .content-wrapper p {
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 15px;
     text-align: justify;
+    margin-bottom: 20px;
   }
   
-  /* Responsive adjustments */
+  /* Leadership List */
+  .leadership ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .leadership li {
+    margin-bottom: 10px;
+  }
+  
+  /* Chairman's Message */
+  .chairman-message {
+    text-align: center;
+  }
+  
+  .chairman-message .signature {
+    font-size: 1rem;
+    color: #5a0e78;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
   @media (max-width: 768px) {
-    .about-heroo {
+    .about-hero-section {
       height: 300px;
     }
-  
-    .hero-overlayy h1 {
-      font-size: 1.8rem;
+    .hero-overlay h1 {
+      font-size: 2rem;
+    }
+    .content-wrapper h2 {
+      font-size: 1.4rem;
+    }
+    .content-wrapper p {
+      font-size: 0.9rem;
     }
   }
   

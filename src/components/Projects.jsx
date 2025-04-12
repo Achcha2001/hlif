@@ -116,7 +116,7 @@ const Projects = () => {
               rel="noopener noreferrer" 
               className="proposal-button"
             >
-              View Proposal 1
+              Little Worriors - Cancer 
             </a>
             <a 
               href="https://drive.google.com/file/d/1q1MrXPZ37r7Q-VYtuQfdxNHWpq2CmHSo/view?usp=drive_link" 
@@ -124,7 +124,23 @@ const Projects = () => {
               rel="noopener noreferrer" 
               className="proposal-button"
             >
-              View Proposal 2
+              Empowering Smiles - Children
+            </a>
+            <a 
+              href="https://drive.google.com/file/d/14grMVBV7quBstw0VezeR89HoAPn6aXI4/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="proposal-button"
+            >
+              Eyes for Elders
+            </a>
+            <a 
+              href="https://drive.google.com/file/d/1Z0ohbYaDFjm9-dXgHk7uB0aMhO64sxe_/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="proposal-button"
+            >
+              Pure Water
             </a>
           </div>
         </div>

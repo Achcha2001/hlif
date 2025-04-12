@@ -75,6 +75,7 @@ function Home() {
         }
         .fancy-title {
           font-size: 2.8rem;
+          color:white;
           font-weight: bold;
           margin-top: 10px;
         }
@@ -163,7 +164,7 @@ function Home() {
             <img src="/images/chil4.webp" alt="Highlight 1" className="d-block w-100" />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="/images/chil3.jpg" alt="Highlight 2" className="d-block w-100" />
+            <img src="/images/poorr.jpg" alt="Highlight 2" className="d-block w-100" />
           </Carousel.Item>
         </Carousel>
 

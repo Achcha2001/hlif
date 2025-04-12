@@ -1,4 +1,3 @@
-// src/components/MenuBar.jsx
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -31,20 +30,25 @@ function MenuBar({ menuItems, donateLink, logoSrc }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {menuItems.map((item, index) => (
-              <Nav.Link as={Link} to={item.link} key={index} className="navLink">
-                {item.label}
-              </Nav.Link>
-            ))}
+            {menuItems.map((item, index) =>
+              item.isButton ? (
+                <Nav.Link as={Link} to={item.link} key={index} className="christianBtnText">
+                  {item.label}
+                </Nav.Link>
+              ) : (
+                <Nav.Link as={Link} to={item.link} key={index} className="navLink">
+                  {item.label}
+                </Nav.Link>
+              )
+            )}
           </Nav>
           {donateLink && (
-  <Nav>
-    <Nav.Link as={Link} to={donateLink.link} className="donateBtnText">
-      {donateLink.label}
-    </Nav.Link>
-  </Nav>
-)}
-
+            <Nav>
+              <Nav.Link as={Link} to={donateLink.link} className="donateBtnText">
+                {donateLink.label}
+              </Nav.Link>
+            </Nav>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -37,7 +37,7 @@ function ForHealing() {
                 </p>
               </Col>
               <Col md={6} className="healing-image">
-                <img src="/images/healing1.jpg" alt="Healing Care" className="healing-img" />
+                <img src="/images/heal.jpg" alt="Healing Care" className="healing-img" />
               </Col>
             </Row>
 
