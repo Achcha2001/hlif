@@ -5,7 +5,7 @@ import './GeneralFoundation.css'; // Global CSS for foundation pages
 function GeneralLayout({ children }) {
   // Define menu items for the General Foundation (Menu Bar A)
   const menuItems = [
-    { label: 'Home', link: '/' },
+    { label: 'Home', link: '/general' },
     { label: 'what we do', link: '/whatwedo' },
     { label: 'About', link: '/about' },
     { label: 'Projects', link: '/projects' },

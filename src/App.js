@@ -12,6 +12,7 @@ import ForHealing from './components/ForHealing';
 import ChristianAbout from './components/ChristianAbout';
 import WhatWeDo from './components/WhatWeDo';
 import ChristianWhatWeDo from './components/ChristianWhatWeDo';
+import Gallery from './components/Gallery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
         <Route path="christian/About" element={<ChristianAbout/>} />
         <Route path="/whatwedo" element={<WhatWeDo/>} />
         <Route path="christian/cwhatwedo" element={<ChristianWhatWeDo/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+
       </Routes>
     </Router>
   );

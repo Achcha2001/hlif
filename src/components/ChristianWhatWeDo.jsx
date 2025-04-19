@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import GeneralLayout from './GeneralLayout';
+import ChristianLayout from './ChristianLayout';
 import Footer from './Footer';
 import './ChristianWhatWeDo.css';
 
@@ -120,7 +120,7 @@ function ChristianWhatWeDo() {
   };
 
   return (
-    <GeneralLayout>
+    <ChristianLayout>
       <div className="christian-whatwedo-page">
         {/* Hero Section */}
         <div className="christian-whatwedo-hero">
@@ -183,7 +183,7 @@ function ChristianWhatWeDo() {
         </div>
       </div>
       <Footer />
-    </GeneralLayout>
+    </ChristianLayout>
   );
 }
 
